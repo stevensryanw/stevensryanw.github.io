@@ -14618,22 +14618,6 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
@@ -15573,7 +15557,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Running the webscraper to get the salary data</span>
-<span class="c1">#Website: https://www.hockeyzoneplus.com/salary-cap/</span>
+<span class="c1">#Website: https://www.hockeyzoneplus.com</span>
 <span class="c1">#This takes about a day to run, so have it commented unless needed</span>
 
 <span class="c1">#%env</span>
@@ -15621,12 +15605,15 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <span class="c1">#Merge the skaterSal and goalieSal dataframes</span>
 <span class="n">nhl</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">nhlSkaterSal</span><span class="p">,</span> <span class="n">nhlGoalieSal</span><span class="p">],</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
-<span class="c1">#Output the dataframe to csv</span>
-<span class="n">nhl</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">'data/nhl/nhl.csv'</span><span class="p">)</span>
-
 <span class="c1">#Example of finding skaters and golies from the newly merged dataframe</span>
 <span class="n">skaters</span> <span class="o">=</span> <span class="n">nhl</span><span class="p">[</span><span class="n">nhl</span><span class="p">[</span><span class="s1">'Pos'</span><span class="p">]</span><span class="o">!=</span><span class="s1">'G'</span><span class="p">]</span>
 <span class="n">goalies</span> <span class="o">=</span> <span class="n">nhl</span><span class="p">[</span><span class="n">nhl</span><span class="p">[</span><span class="s1">'Pos'</span><span class="p">]</span><span class="o">==</span><span class="s1">'G'</span><span class="p">]</span>
+
+<span class="c1">#Remove rows with empty salary values</span>
+<span class="n">nhl</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="p">[</span><span class="s1">'Salary'</span><span class="p">],</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1">#Output the dataframe to csv</span>
+<span class="n">nhl</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">'data/nhl/nhl.csv'</span><span class="p">)</span>
 
 <span class="c1">#Output the dataframe</span>
 <span class="n">nhl</span>
@@ -15791,17 +15778,17 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
       <td>NaN</td>
     </tr>
     <tr>
-      <th>4</th>
+      <th>6</th>
       <td>2018</td>
-      <td>Sebastian Aho</td>
-      <td>20.0</td>
-      <td>CAR</td>
-      <td>RW</td>
-      <td>78</td>
-      <td>29</td>
-      <td>0.3718</td>
-      <td>36</td>
-      <td>65</td>
+      <td>Mark Alt</td>
+      <td>26.0</td>
+      <td>TOT</td>
+      <td>D</td>
+      <td>15</td>
+      <td>-</td>
+      <td>0.0000</td>
+      <td>-</td>
+      <td>-</td>
       <td>...</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -15837,6 +15824,54 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
       <td>...</td>
       <td>...</td>
       <td>...</td>
+    </tr>
+    <tr>
+      <th>17514</th>
+      <td>2018</td>
+      <td>Malcolm Subban</td>
+      <td>24.0</td>
+      <td>VEG</td>
+      <td>G</td>
+      <td>22</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.910</td>
+      <td>2.68</td>
+      <td>0.0</td>
+      <td>3.3</td>
+      <td>1230.0</td>
+      <td>8.0</td>
+      <td>0.421</td>
+      <td>2.0</td>
+      <td>102.0</td>
+      <td>-1.11</td>
+    </tr>
+    <tr>
+      <th>17517</th>
+      <td>2018</td>
+      <td>Linus Ullmark</td>
+      <td>24.0</td>
+      <td>BUF</td>
+      <td>G</td>
+      <td>5</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.935</td>
+      <td>2.00</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>240.0</td>
+      <td>2.0</td>
+      <td>0.667</td>
+      <td>0.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
     </tr>
     <tr>
       <th>17518</th>
@@ -15910,57 +15945,9 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
       <td>108.0</td>
       <td>-7.82</td>
     </tr>
-    <tr>
-      <th>17521</th>
-      <td>2018</td>
-      <td>Scott Wedgewood</td>
-      <td>25.0</td>
-      <td>ARI</td>
-      <td>G</td>
-      <td>20</td>
-      <td>0</td>
-      <td>NaN</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>...</td>
-      <td>0.893</td>
-      <td>3.45</td>
-      <td>1.0</td>
-      <td>2.0</td>
-      <td>1097.0</td>
-      <td>7.0</td>
-      <td>0.412</td>
-      <td>4.0</td>
-      <td>122.0</td>
-      <td>-11.48</td>
-    </tr>
-    <tr>
-      <th>17522</th>
-      <td>2018</td>
-      <td>Adam Wilcox</td>
-      <td>25.0</td>
-      <td>BUF</td>
-      <td>G</td>
-      <td>1</td>
-      <td>0</td>
-      <td>NaN</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>...</td>
-      <td>1.000</td>
-      <td>0.00</td>
-      <td>0.0</td>
-      <td>0.2</td>
-      <td>39.0</td>
-      <td>0.0</td>
-      <td>NaN</td>
-      <td>0.0</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
   </tbody>
 </table>
-<p>17523 rows × 46 columns</p>
+<p>11531 rows × 46 columns</p>
 </div>
 </div>
 

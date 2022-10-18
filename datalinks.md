@@ -2,6 +2,7 @@ NHL Stats
 https://moneypuck.com/data.htm
 
 NHL Salaries
+https://www.hockeyzoneplus.com
 
 NBA Stats
 https://www.kaggle.com/datasets/drgilermo/nba-players-stats?select=player_data.csv
