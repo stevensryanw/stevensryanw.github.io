@@ -67,7 +67,7 @@ def grab_salary_info(salary_url):
             pass
 
 
-names = csv_read('webscrapers/nhl/nhlName.csv')
+names = csv_read('webscrapers/nhlName.csv')
 for name in names:
     print(f"____________{name}____________")
     salary_url = grab_salary_url(name)
