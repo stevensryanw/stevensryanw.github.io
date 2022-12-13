@@ -1,0 +1,245 @@
+# NHL
+- **Year**: The year the player played in
+- **Name**: The name of the player
+- **Age**: Players age that season
+- **Team**: The team the player was playing for
+- **Pos**: The position the player played
+- **GP**: Games played in that season
+- **G**: Goals scored in that season
+- **GPG**: Average goals per game in that season
+- **A**: Assists in that season
+- **PTS**: Points in that season (G+A)
+- **+/-**: Plus/Minus in that season
+- **PIM**: Penalty Minutes in that season
+- **EVG**: Even Strength Goals in that season
+- **PPG**: Power Play Goals in that season
+- **SHG**: Short Handed Goals in that season
+- **GWG**: Game Winning Goals in that season
+- **EVA**: Even Strength Assists in that season
+- **PPA**: Power Play Assists in that season
+- **SHA**: Short Handed Assists in that season
+- **S**: Shots in that season
+- **S%**: Shooting Percentage in that season
+- **TOI**: Time on Ice in that season
+- **ATOI**: Average Time on Ice in that season
+- **BLK**: Blocks in that season
+- **HIT**: Hits in that season
+- **FOwin**: Faceoffs Won in that season
+- **FOloss**: Faceoffs Lost in that season
+- **FO%**: Faceoff Percentage in that season
+- **Salary**: Salary for that season
+- **GS**: Games started in that season
+- **W**: Wins in that season
+- **L**: Losses in that season
+- **T**: Ties/Overtime in that season
+- **GA**: Goals Against in that season
+- **SA**: Shots Against in that season
+- **SV**: Saves in that season
+- **SV%**: Save Percentage in that season
+- **GAA**: Goals Against Average in that season
+- **SO**: Shutouts in that season
+- **GPS**: Goalie point shares in that season
+- **MIN**: Minutes in that season
+- **QS**: Quality starts in that season
+- **QS%**: Quality start percentage in that season
+- **RBS**: Rebound saves in that season
+- **GA%**: Goals against percentage in that season
+- **GSAA**: Goalie save above average in that season
+
+# NFL
+##### All
+- **Name**: The name of the player
+- **Position**: The position the player played
+- **Year**: The year the player played in
+- **Team**: The team the player was playing for
+- **Games Played**: Games played in that season
+- **Salary**: Salary for that season
+##### Passing
+- **Passes Attempted**: Passes attempted in that season
+- **Passes Completed**: Passes completed in that season
+- **Completion Percentage**: Completion percentage in that season
+- **Pass Attempts Per Game**: Pass attempts per game in that season
+- **Passing Yards**: Passing yards in that season
+- **Passing Yards Per Attempt**: Passing yards per attempt in that season
+- **Passing Yards Per Game**: Passing yards per game in that season
+- **TD Passes**: Touchdown passes in that season
+- **Percentage of TDs per Attempts**: Percentage of touchdowns per attempt in that season
+- **Ints_x**: Passing interceptions in that season
+- **Int Rate**: Interception rate in that season
+- **Longest Pass**: Longest pass in that season
+- **Passes Longer than 20 Yards**: Passes per game in that season
+- **Passes Longer than 40 Yards**: Passes longer than 40 yards in that season
+- **Sacks_x**: Sacks in that season
+- **Sack Yards Lost**: Sack yards lost in that season
+- **Passer Rating**: Passer rating in that season
+##### Recieving
+- **Receptions**: Receptions in that season
+- **Receiving Yards**: Receiving yards in that season
+- **Yards Per Reception**: Receiving yards per reception in that season
+- **Yards Per Game**: Receiving yards per game in that season
+- **Longest Reception**: Longest reception in that season
+- **Recieving TDs**: Receiving touchdowns in that season
+- **Receptions Longer than 20 Yards**: Receptions longer than 20 yards in that season
+- **Receptions Longer than 40 Yards**: Receptions longer than 40 yards in that season
+- **First Down Receptions**: First down receptions in that season
+- **Recieving Fumbles**: Receiving fumbles in that season
+##### Running
+- **Rushing Attempts**: Rushing attempts in that season
+- **Rushing Attempts Per Game**: Rushing attempts per game in that season
+- **Rushing Yards**: Rushing yards in that season
+- **Yards Per Carry**: Yards per carry in that season
+- **Rushing Yards Per Game**: Rushing yards per game in that season
+- **Rushing TDs**: Rushing touchdowns in that season
+- **Longest Rushing Run**: Longest rush in that season
+- **Rushing First Downs**: Rushing first downs in that season
+- **Percentage of Rushing First Downs**: Percentage of rushing first downs in that season
+- **Rushing More Than 20 Yards**: Rushing more than 20 yards in that season
+- **Rushing More Than 40 Yards**: Rushing more than 40 yards in that season
+- **Rushing Fumbles**: Rushing fumbles in that season
+##### Defensive
+- **Total Tackles**: Tackles in that season
+- **Solo Tackles**: Solo tackles in that season
+- **Assisted Tackles**: Assisted tackles in that season
+- **Sacks_y**: Sacks in that season
+- **Safeties**: Safeties in that season
+- **Passes Defended**: Passes defended in that season
+- **Int_y**: Interceptions in that season
+- **Ints for TDs**: Interceptions for touchdowns in that season
+- **Int Yards**: Interception yards in that season
+- **Yards Per Int**: Yards per interception in that season
+- **Longest Int Return**: Longest interception in that season
+##### Fumbles
+- **Fumbles_x**: Fumbles in that season
+- **Fumbles Lost**: Fumbles lost in that season
+- **Forced Fumbles**: Fumbles forced in that season
+- **Own Fumbles Recovered**: Fumbles recovered in that season
+- **Opponent Fumbles Recovered**: Opponent fumbles recovered in that season
+- **Own Fumble Return Yards**: Fumble return yards in that season
+- **Opponent Fumble Return Yards**: Opponent fumble return yards in that season
+- **Fumble Return TDs**: Fumble return touchdowns in that season
+- **Out of Bounds Fumbles**: Out of bounds fumbles in that season
+- **Saftey Fumbles**: Safety fumbles in that season
+- **Touchbacks_x**: Touchbacks in that season
+##### Feild Goals
+- **Kicks Blocked**: Kicks blocked in that season
+- **Longest FG Made**: Longest field goal made in that season
+- **FGs Made**: Field goals made in that season
+- **FGs Attempted**: Field goals attempted in that season
+- **FG Percentage**: Field goal percentage in that season
+- **FGs Made 20-29 Yards**: Field goals made 20-29 yards in that season
+- **FGs Attempted 20-29 Yards**: Field goals attempted 20-29 yards in that season
+- **FG Percentage 20-29 Yards**: Field goal percentage 20-29 yards in that season
+- **FGs Made 30-39 Yards**: Field goals made 30-39 yards in that season
+- **FGs Attempted 30-39 Yards**: Field goals attempted 30-39 yards in that season
+- **FG Percentage 30-39 Yards**: Field goal percentage 30-39 yards in that season
+- **FGs Made 40-49 Yards**: Field goals made 40-49 yards in that season
+- **FGs Attempted 40-49 Yards**: Field goals attempted 40-49 yards in that season
+- **FG Percentage 40-49 Yards**: Field goal percentage 40-49 yards in that season
+- **FGs Made 50+ Yards**: Field goals made 50+ yards in that season
+- **FGs Attempted 50+ Yards**: Field goals attempted 50+ yards in that season
+- **FG Percentage 50+ Yards**: Field goal percentage 50+ yards in that season
+- **Extra Points Attempted**: Extra points attempted in that season
+- **Extra Points Made**: Extra points made in that season
+- **Percentage of Extra Points Made**: Extra point percentage in that season
+- **Extra Points Blocked**: Extra points blocked in that season
+##### Kick Returns
+- **Returns_x**: Kick returns in that season
+- **Yards Returned_x**: Kick return yards in that season
+- **Yards Per Return_x**: Kick return yards per return in that season
+- **Longest Return_x**: Longest kick return in that season
+- **Returns for TDs_x**: Kick returns for touchdowns in that season
+- **Returns Longer than 20 Yards_x**: Kick returns longer than 20 yards in that season
+- **Returns Longer than 40 Yards_x**: Kick returns longer than 40 yards in that season
+- **Fair Catches_x**: Fair catches in that season
+- **Fumbles_y**: Fumbles in that season
+##### Kicking
+- **Kickoffs**: Kickoffs in that season
+- **Kickoff Yards**: Kickoff yards in that season
+- **Out of Bounds Kickoffs**: Out of bounds kickoffs in that season
+- **Yards Per Kickoff**: Kickoff yards per kickoff in that season
+- **Touchbacks_y**: Touchbacks in that season
+- **Touchback Percentage**: Touchback percentage in that season
+- **Kickoffs Returned**: Kickoffs returned in that season
+- **Average Returned Yards**: Average kickoff return in that season
+- **Kickoffs Resulting in TDs**: Kickoffs resulting in touchdowns in that season
+- **On Side Kicks**: On side kicks in that season
+- **On Side Kick Returned**: On side kicks returned in that season
+##### Punt Returns
+- **Returns_y**: Punt returns in that season
+- **Yards Returned_y**: Punt return yards in that season
+- **Yards Per Return_y**: Punt return yards per return in that season
+- **Longest Return_y**: Longest punt return in that season
+- **Returns for TDs_y**: Punt returns for touchdowns in that season
+- **Returns Longer than 20 Yards_y**: Punt returns longer than 20 yards in that season
+- **Returns Longer than 40 Yards_y**: Punt returns longer than 40 yards in that season
+- **Fair Catches_y**: Fair catches in that season
+- **Fumbles**: Fumbles in that season
+##### Punting
+- **Punts**: Punts in that season
+- **Gross Punting Yards**: Gross punting yards in that season
+- **Net Punting Yards**: Net punting yards in that season
+- **Longest Punt**: Longest punt in that season
+- **Gross Punting Average**: Gross punting average in that season
+- **Net Punting Average**: Net punting average in that season
+- **Punts Blocked**: Punts blocked in that season
+- **Out of Bounds Punts**: Out of bounds punts in that season
+- **Downed Punts**: Downed punts in that season
+- **Punts Inside 20 Yard Line**: Punts inside the 20 yard line in that season
+- **Touchbacks**: Touchbacks in that season
+- **Fair Catches**: Fair catches in that season
+- **Punts Returned**: Punts returned in that season
+- **Yards Returned on Punts**: Punt return yards in that season
+- **TDs Returned on Punts**: Punt return touchdowns in that season
+
+# NBA
+- **Season**: The year the player played in
+- **Name**: The name of the player
+- **Pos**: The position the player played
+- **Age**: Players age that season
+- **Team**: The team the player was playing for
+- **G**: Games played in that season
+- **GS**: Games started in that season
+- **MP**: Minutes played in that season
+- **PER**: Player Efficiency Rating in that season
+- **TS%**: True Shooting Percentage in that season
+- **3PAr**: 3 Point Attempt Rate in that season
+- **FTr**: Free Throw Attempt Rate in that season
+- **ORB%**: Offensive Rebound Percentage in that season
+- **DRB%**: Defensive Rebound Percentage in that season
+- **TRB%**: Total Rebound Percentage in that season
+- **AST%**: Assist Percentage in that season
+- **STL%**: Steal Percentage in that season
+- **BLK%**: Block Percentage in that season
+- **TOV%**: Turnover Percentage in that season
+- **USG%**: Usage Percentage in that season
+- **OWS**: Offensive Win Shares in that season
+- **DWS**: Defensive Win Shares in that season
+- **WS**: Win Shares in that season
+- **WS/48**: Win Shares per 48 minutes in that season
+- **OBPM**: Offensive Box Plus/Minus in that season
+- **DBPM**: Defensive Box Plus/Minus in that season
+- **BPM**: Box Plus/Minus in that season
+- **VORP**: Value Over Replacement Player in that season
+- **FG**: Field Goals in that season
+- **FGA**: Field Goal Attempts in that season
+- **FG%**: Field Goal Percentage in that season
+- **3P**: 3 Pointers in that season
+- **3PA**: 3 Point Attempts in that season
+- **3P%**: 3 Point Percentage in that season
+- **2P**: 2 Pointers in that season
+- **2PA**: 2 Point Attempts in that season
+- **2P%**: 2 Point Percentage in that season
+- **eFG%**: Effective Field Goal Percentage in that season
+- **FT**: Free Throws in that season
+- **FTA**: Free Throw Attempts in that season
+- **FT%**: Free Throw Percentage in that season
+- **ORB**: Offensive Rebounds in that season
+- **DRB**: Defensive Rebounds in that season
+- **TRB**: Total Rebounds in that season
+- **AST**: Assists in that season
+- **STL**: Steals in that season
+- **BLK**: Blocks in that season
+- **TOV**: Turnovers in that season
+- **PF**: Personal Fouls in that season
+- **PTS**: Points in that season
+- **Salary**: Salary for that season
